@@ -294,8 +294,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
-}
 
+
+}
 .card {
     height: 400px;
     width: 300px;
@@ -345,7 +346,7 @@ body {
 }
 
 
-.projects {
+ .projects {
     min-height: 100vh;
     padding: 80px 8%;
     overflow: hidden;
@@ -375,7 +376,7 @@ body {
 
 
 
-  .project-card {
+   .project-card {
     width: 750px;
     display: flex;
     align-items: center;
@@ -443,7 +444,7 @@ body {
     font-size: 16px;
     margin-left: 150px;
    
-}
+} 
 .dotted-lineP{
      width: 150px;
     border-top: 3px dashed white;
@@ -451,7 +452,7 @@ body {
     margin-bottom: 100px;
 
 } 
- 
+  
 
 
 .education {
@@ -736,75 +737,180 @@ body {
    
 
 
+@media (max-width: 1024px) {
 
-
-@media (max-width: 480px) {
-
-    
     .header {
-        padding: 15px 4%;
-    }
-
-    .logo {
-        font-size: 25px;
+        padding: 20px 40px;
     }
 
     .navbar {
-        gap: 10px 12px;
+        gap: 20px;
     }
 
     .navbar a {
-        font-size: 12px;
+        font-size: 15px;
     }
 
-    
     .hero {
-        padding: 40px 5%;
-    }
-
-    .hero-content h3 {
-        font-size: 19px;
+        padding: 60px 50px;
+        gap: 30px;
     }
 
     .hero-content h1 {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .hero-content p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .hero-image {
-        width: 85%;
+    .hero-image img {
+        width: 380px;
     }
 
     
+
     .about {
-        padding: 45px 5%;
+        padding: 70px 50px;
+        gap: 50px;
     }
 
     .about-images {
-        height: 280px;
+        width: 45%;
     }
 
-    .about-content h1 {
-        font-size: 30px;
-    }
-
-    .about-content h2 {
-        font-size: 23px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-        line-height: 1.7;
+    .about-content {
+        width: 50%;
     }
 
 
     .skills {
-        grid-template-columns: 1fr;
+        padding: 50px;
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-        padding: 40px 8%;
+    }
+
+    
+
+    .project-wrapper {
+        padding: 30px 50px;
+        gap: 25px;
+    }
+
+    
+
+    .education-container {
+        gap: 50px;
+    }
+}
+
+
+ 
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h3 {
+        font-size: 22px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .contact-btn {
+        display: inline-flex;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 300px;
+        max-width: 90%;
+    }
+
+
+    
+    .about {
+        flex-direction: column;
+        padding: 60px 25px;
+        gap: 50px;
+    }
+
+    .about-images {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-content h1 {
+        font-size: 40px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+
+
+    .skills {
+        padding: 50px 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .card {
@@ -815,17 +921,31 @@ body {
         max-width: 130px;
     }
 
+
     
+
     .projects {
-        padding: 40px 5%;
+        padding: 50px 20px;
     }
 
     .heading h1 {
-        font-size: 30px;
+        font-size: 40px;
+        text-align: center;
     }
 
     .project-wrapper {
-        gap: 25px;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-image img {
+        width: 100%;
     }
 
     .project-content {
@@ -833,7 +953,7 @@ body {
     }
 
     .project-content h2 {
-        font-size: 21px;
+        font-size: 24px;
     }
 
     .project-content p {
@@ -841,24 +961,173 @@ body {
         line-height: 1.7;
     }
 
-    /* Education */
+
+    
+
     .education {
-        padding: 40px 5%;
+        padding: 50px 20px;
     }
 
-    .circle {
-        width: 130px;
-        height: 130px;
+    .education-container {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .education-box {
+        width: 100%;
+    }
+
+
+    
+    .connect {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .connect h1 {
+        font-size: 40px;
+    }
+
+    .social-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .social {
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+
+    
+
+    .hero {
+        padding: 40px 18px;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+
+    .about {
+        padding: 45px 18px;
+    }
+
+    .about-images {
+        height: 280px;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .about-content h2 {
+        font-size: 25px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+
+    
+
+    .skills {
+        padding: 40px 18px;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+
+    
+
+    .projects {
+        padding: 40px 18px;
+    }
+
+    .heading h1 {
+        font-size: 34px;
+    }
+
+    .project-content h2 {
+        font-size: 21px;
+    }
+
+    .project-content p {
+        font-size: 13px;
+    }
+
+
+
+
+    .education {
+        padding: 40px 18px;
+    }
+
+    .education-container {
+        gap: 35px;
+    }
+
+    /* .circle {
+        width: 150px;
+        height: 150px;
     }
 
     .circle-inner {
-        width: 100px;
-        height: 100px;
+        width: 115px;
+        height: 115px;
+    } */
+
+
+
+    .connect {
+        padding: 40px 18px;
     }
 
-    /* Contact */
     .connect h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .social-container {
@@ -866,60 +1135,10 @@ body {
     }
 
     .social {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
     }
 
 }
 
 
-
-@media (max-width: 360px) {
-
-    .navbar {
-        gap: 8px 10px;
-    }
-
-    .navbar a {
-        font-size: 11px;
-    }
-
-    .hero-content h1 {
-        font-size: 27px;
-    }
-
-    .hero-content h3 {
-        font-size: 18px;
-    }
-
-    .hero-content p {
-        font-size: 13px;
-    }
-
-    .hero-image {
-        width: 90%;
-    }
-
-    .about-images {
-        height: 240px;
-    }
-
-    .skills {
-        padding: 35px 6%;
-    }
-
-    .project-content {
-        padding: 15px;
-    }
-
-    .circle {
-        width: 120px;
-        height: 120px;
-    }
-
-    .circle-inner {
-        width: 90px;
-        height: 90px;
-    }
-
-}
